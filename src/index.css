@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@300;400;500;600;700;800&family=Yatra+One&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-patriotic: "Yatra One", "Cinzel", serif;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes wave-flow {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+/* Custom swachh bharat tricolor gradients */
+.tricolor-text-gradient {
+  background: linear-gradient(135deg, #FF9933 15%, #000000 50%, #138808 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tricolor-border {
+  border-image: linear-gradient(to right, #FF9933, #FFFFFF, #138808) 1;
+}
+
+/* Wavy background helper mimicking musical/artistic ribbons */
+.patriotic-wave {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cpath d='M0%2C120 C320%2C180 640%2C40 960%2C100 C1280%2C160 1440%2C80 1600%2C120 L1600%2C0 L0%2C0 Z' fill='%23FF9933' fill-opacity='0.12'/%3E%3Cpath d='M0%2C200 C350%2C280 600%2C90 950%2C150 C1300%2C210 1450%2C150 1600%2C220 L1600%2C0 L0%2C0 Z' fill='%23FFD8A8' fill-opacity='0.08'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Indian flag green brush effects for the bottom right */
+.green-brush-accent {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cpath d='M1600%2C680 C1280%2C620 960%2C760 640%2C700 C320%2C640 160%2C720 0%2C680 L0%2C800 L1600%2C800 Z' fill='%23138808' fill-opacity='0.1'/%3E%3Cpath d='M1600%2C600 C1250%2C520 1000%2C710 650%2C650 C300%2C590 150%2C650 0%2C580 L0%2C800 L1600%2C800 Z' fill='%23C3FAE8' fill-opacity='0.06'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}

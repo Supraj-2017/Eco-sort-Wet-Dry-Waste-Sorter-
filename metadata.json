@@ -1,0 +1,6 @@
+{
+  "name": "Eco-sort",
+  "description": "An intelligent waste sorting helper that uses your camera to identify and classify wet, dry, and sanitary/hazardous waste with real-time feedback and environmental tips.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
