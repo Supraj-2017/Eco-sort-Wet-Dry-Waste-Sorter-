@@ -1,4 +1,4 @@
-WasteWise Agent
+Eco-sort
 An AI agent that helps households and waste collectors classify waste as wet or dry using a photo of the waste item — grounded in real CPCB and municipal solid waste management rules, with human-in-the-loop escalation for ambiguous or unrecognizable items.
 
 
